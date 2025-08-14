@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planck"
+version = "0.1.0"
+description = "Python package to perform Hartree-Fock and post-Hartree-Fock calculations on molecules."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Hemanth Haridas", email = "hemanthhari23@gmail.com" }
+]
+
+dependencies = [
+    "numpy",  # List of runtime dependencies
+    "scipy"
+]
+
+requires-python = ">=3.11"  # Minimum Python version
+
+[tool.setuptools]
+packages = [
+    "geometry"
+    ]
+
+[project.urls]
+homepage = "https://github.com/HemanthHaridas/planck_v2"
+repository = "https://github.com/HemanthHaridas/planck_v2"
+documentation = "https://github.com/HemanthHaridas/planck_v2"
